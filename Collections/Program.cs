@@ -21,6 +21,9 @@ namespace Collections
 
             studentsByHairColor.Add("Bald", new List<string> { "Martin" });
 
+            //this throws an exception:
+            //studentsByHairColor.Add("Bald", new List<string> { "Adam" });
+
             var theBlackHairedStudents = studentsByHairColor["Black"];
 
             if (theBlackHairedStudents == studentsWithBlackHair)
